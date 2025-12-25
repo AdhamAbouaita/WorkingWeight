@@ -52,39 +52,36 @@ date,exercise_name,weight
 
 ## 🛠 Building the Application
 
-To turn this project into a standalone macOS Application (`.app`), we use **electron-builder**.
+To turn this project into a real, standalone macOS Application (`.app`), follows these steps:
 
 ### Prerequisites
 *   Node.js installed on your machine.
 *   Terminal access.
 
-### 1. Installation
-Clone the repository and install the dependencies:
+### 1. Installation (One-time Setup)
+First, install the necessary tools and dependencies (like `electron-builder`):
 ```bash
 npm install
 ```
 
-### 2. Development Mode
-To run the app locally during development without building:
+### 2. Development Mode (Optional)
+To run the app locally during development without building the full package:
 ```bash
 npm start
 ```
 
 ### 3. Build & Compile
-To create the standalone `.app` file:
+To generate the native macOS application:
 
 ```bash
 npm run build
 ```
 
-This process will:
-1.  Package the Electron application.
-2.  Optimize the assets.
-3.  Inject the icon (`logo.png`).
-4.  Output the final artifacts into the `dist/` folder.
+This single command will package your code into a ready-to-run `.app` file.
 
 **Output Location:**
-You will find the compiled application in `dist/mac-arm64/WorkingWeight.app` (for Apple Silicon Macs).
+The compiled application will be located at:
+`dist/mac-arm64/WorkingWeight.app`
 
 ## 📄 License
 ISC
